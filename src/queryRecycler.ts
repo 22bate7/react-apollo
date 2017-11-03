@@ -45,6 +45,7 @@ export class ObservableQueryRecycler {
   public recycle(observableQuery: ObservableQuery<any>): void {
     // Stop the query from polling when we recycle. Polling may resume when we
     // reuse it and call `setOptions`.
+    observableQuery.lastError = null;
     observableQuery.setOptions({
       fetchPolicy: 'standby',
       pollInterval: 0,
