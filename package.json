@@ -31,6 +31,7 @@
     "lint-fix":
       "prettier --trailing-comma all --single-quote --write \"{src,test}/**/*.ts*\"",
     "postcompile": "npm run bundle",
+    "prepare": "npm run compile",
     "prepublishOnly": "npm run compile"
   },
   "bundlesize": [
