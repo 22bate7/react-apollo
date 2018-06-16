@@ -1,28 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "es2015",
-    "lib": ["es6", "dom"],
-    "moduleResolution": "node",
-    "sourceMap": true,
+    "allowSyntheticDefaultImports": false,
     "declaration": true,
-    "noImplicitAny": false,
-    "rootDir": "src",
-    "outDir": "lib",
-    "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
+    "jsx": "react",
+    "lib": ["es2015", "dom"],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noUnusedParameters": true,
+    "outDir": "lib",
     "pretty": true,
     "removeComments": true,
-    "jsx": "react",
     "skipLibCheck": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "sourceMap": true,
+    "strict": true,
+    "target": "es5"
   },
-  "include": [
-    "./typings.d.ts",
-    "./src/index.ts",
-    "./src/server.ts",
-    "./src/test-utils.tsx"
-  ],
-  "exclude": ["node_modules", "dist", "lib"]
+  "include": ["./typings/**/*", "./src/**/*", "./test/**/*"],
+  "exclude": ["./node_modules", "./dist", "./lib"]
 }
